@@ -79,7 +79,7 @@
         app:layout_constraintBottom_toTopOf="@id/tilCoupon"
         style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
         <com.google.android.material.textfield.TextInputEditText
-            android:id="@+id/tvDescription"
+            android:id="@+id/etDescription"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:textAppearance="@style/TextAppearance.AppCompat.Body2"
