@@ -11,4 +11,5 @@
     <string name="error_unknow">Eror desconocido al crear cupon.</string>
     <string name="main_save_success">Cupon creado.</string>
     <string name="main_hint_active">Cupon activo</string>
+    <string name="main_text_title_crate">Cupon disponible, agrega la descripcion y pulsa sobre: crear cupon</string>
 </resources>
