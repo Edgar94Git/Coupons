@@ -6,6 +6,13 @@ import org.junit.Test
 class CouponUtilsKtTest{
     @Test
     fun validateTextCodeSuccessTest(){
-        assertTrue(true, )
+        val code = "welcome"
+        assertTrue(validateTextCode(code))
+    }
+
+    @Test
+    fun validateTextCodeEmptyFailTest(){
+        val code = ""
+        assertFalse(validateTextCode(code))
     }
 }
