@@ -15,4 +15,16 @@ class CouponUtilsKtTest{
         val code = ""
         assertFalse(validateTextCode(code))
     }
+
+    @Test
+    fun validateTextCodeMinLengthTest(){
+        val code = "Hola"
+        assertFalse(validateTextCode(code))
+    }
+
+    @Test
+    fun validateTextCodeMaxLengthTest(){
+        val code = "Bienvenidos al curso"
+        assertFalse(validateTextCode(code))
+    }
 }
