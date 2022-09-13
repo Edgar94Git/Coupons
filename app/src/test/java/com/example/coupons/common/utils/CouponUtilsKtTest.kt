@@ -1,6 +1,7 @@
 package com.example.coupons.common.utils
 
 import com.example.coupons.R
+import com.example.coupons.common.entities.CouponEntity
 import org.junit.Assert.*
 import org.junit.Test
 
@@ -51,5 +52,11 @@ class CouponUtilsKtTest{
         val expectedValue = R.string.error_invalid_length
         val result = getMsgErrorByCode(errorCode)
         assertEquals("Error al evaluar la longitud valida.",expectedValue, result)
+    }
+
+    @Test
+    fun checkNotNullCouponTest(){
+        val coupon = CouponEntity(code = "Android", description = "Cusrsos a $9.99 usd")
+        assertNotNull(coupon)
     }
 }
