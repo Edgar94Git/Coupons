@@ -44,4 +44,12 @@ class CouponUtilsKtTest{
         val result = getMsgErrorByCode(errorCode)
         assertEquals("Error al evaluar un cupon existente",expectedValue, result)
     }
+
+    @Test
+    fun getMsgErrorByCodeLengthTest(){
+        val errorCode = Constants.ERROR_LENGTH
+        val expectedValue = R.string.error_invalid_length
+        val result = getMsgErrorByCode(errorCode)
+        assertEquals("Error al evaluar la longitud valida.",expectedValue, result)
+    }
 }
