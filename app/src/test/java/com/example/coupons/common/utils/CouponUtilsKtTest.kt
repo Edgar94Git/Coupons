@@ -57,6 +57,26 @@ class CouponUtilsKtTest{
     @Test
     fun checkNotNullCouponTest(){
         val coupon = CouponEntity(code = "Android", description = "Cusrsos a $9.99 usd")
-        assertNotNull(coupon)
+        assertNotNull("El cupon no deberia ser nulo",coupon)
+    }
+
+    @Test
+    fun checkGroupsSuccessTest(){
+        val aNames = arrayOf("edgar","karem", "gaby")
+        val bNames = arrayOf("edgar","karem", "gaby")
+        assertArrayEquals("Los arreglos deberian coincidir, revise sus elementos",bNames, aNames)
+    }
+
+    @Test
+    fun checkNullCouponTest(){
+        val coupon = null
+        assertNull("El cupon deberiar ser nulo", coupon)
+    }
+
+    @Test
+    fun checkGroupdFailTest(){
+        val aNames = arrayOf("edgar","karem", "gaby")
+        val bNames = arrayOf("edgar","karem", "gaby")
+        assertNotEquals("Estos arreglos coinciden",bNames, aNames)
     }
 }
